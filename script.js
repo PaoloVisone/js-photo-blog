@@ -4,3 +4,6 @@ const content = document.getElementById('content');
 
 // API
 const endopoint = 'https://lanciweb.github.io/demo/api/pictures/';
+
+// Variabile d'appoggio
+let item = ""
