@@ -4,6 +4,11 @@
     box-sizing: border-box;
 }
 
+body {
+    background-image: url("img/cork.png");
+    background-size: contain;
+}
+
 /* header */
 
 header {
@@ -18,27 +23,31 @@ h1 {
 
 /* main */
 
-#content {
-    background-image: url("img/cork.png");
+#card-box {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 0 auto;
+    padding: 40px;
 }
 
 /* Card */
 
 .card {
-    border: 1px solid black;
-    width: 30%;
     position: relative;
+    background-color: white;
 }
 
 .card-picture {
-    border: 1px solid red;
-    width: 100%;
+    height: 200px;
     padding: 10px;
 }
 
 /* image card */
 
-.card-picture>img {
+.picture {
     width: 100%;
     height: 100%;
 }
@@ -46,14 +55,14 @@ h1 {
 /* text card */
 
 .card-text {
-    border: 1px solid green;
     padding: 10px;
 }
 
 /* pin */
 
 #pin {
+    width: 25px;
     position: absolute;
-    top: -20px;
-    left: 45%;
+    top: -12px;
+    left: 43%;
 }

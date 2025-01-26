@@ -1,5 +1,5 @@
 // Selezino gli elementi d'interesse (Output)
-const content = document.getElementById('content');
+const cardBox = document.getElementById('card-box');
 
 
 // API
@@ -28,17 +28,17 @@ axios.get(endopoint)
               <div class="card-picture">
                 <img class="picture" src="${url}" alt="${id}">
               </div>
-            <div class="card-text">
+              <div class="card-text">
                 <span class="date">${date}</span>
                 <h2 class="description">${title}</h2>
-            </div>
-           <!-- pin --> <!-- pin -->
-           <!-- pin --> <!-- pin --> 
-            <img id="pin" src="img/pin.svg" alt="">
-            </div> `
+              </div>
+                      <!-- pin --> <!-- pin -->
+                      <!-- pin --> <!-- pin --> 
+                <img id="pin" src="img/pin.svg" alt="">
+            </div>`
 
             // Output 
-            content.innerHTML = item;
+            cardBox.innerHTML = item;
         }
     })
 
