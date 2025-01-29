@@ -3,8 +3,6 @@ const cardBox = document.getElementById('card-box');
 const overlay = document.getElementById('overlay');
 const cards = document.getElementsByClassName('card');
 
-
-
 // API
 const endopoint = 'https://lanciweb.github.io/demo/api/pictures/';
 
